@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <h1>Вот ваш результат! Вы</h1>
+    <p id="yourResultCharacterDisplay">yourResultCharacterDisplay</p>
+</head>
+<script>
+    function get_random_int(max) {
+    return Math.floor(Math.random() * max);}
+    //alert(get_random_int(10)); Тестовая хуйня
+    let rand_math_result = get_random_int(10);
+    let character_name = "yourResultCharacterDisplay";
+
+    if (rand_math_result==0){character_name="Честер";};
+    if (rand_math_result==1){character_name="Мортис";};
+    if (rand_math_result==2){character_name="Спайк";};
+    if (rand_math_result==3){character_name="Шелли";};
+    if (rand_math_result==4){character_name="Огроменный хуй";};
+    if (rand_math_result==5){character_name="МГЕ Братик Артем";};
+    if (rand_math_result==6){character_name="Кольт";};
+    if (rand_math_result==7){character_name="Ворон";};
+    if (rand_math_result==8){character_name="Леон";};
+    if (rand_math_result==5){character_name="Корделиус";};
+
+    document.getElementById('yourResultCharacterDisplay').innerText = character_name;
+</script>
